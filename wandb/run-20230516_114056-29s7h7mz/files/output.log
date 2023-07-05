@@ -1,0 +1,87 @@
+C:\Users\yujunyu\.conda\envs\pytorch\lib\site-packages\torchvision\transforms\transforms.py:332: UserWarning: Argument 'interpolation' of type int is deprecated since 0.13 and will be removed in 0.15. Please use InterpolationMode enum.
+  warnings.warn(
+gpu_info:
+[32mcuda.is_available:True
+[32mcuda.device_count:1
+[32mcuda.device_name:NVIDIA GeForce RTX 3050 Laptop GPU
+[32mcuda.current_device:0
+datasets_info:
+[32mtrain_inputs:2816	train_labels:2816
+[32mval_inputs:705	val_labels:705
+[32mlabel_map:{'番茄叶斑病': 0, '苹果黑星病': 1, '葡萄黑腐病': 2}
+加载预训练模型
+net_structure:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 16, 222, 222]             448
+         MaxPool2d-2         [-1, 16, 111, 111]               0
+            Conv2d-3         [-1, 32, 109, 109]           4,640
+         MaxPool2d-4           [-1, 32, 54, 54]               0
+            Conv2d-5           [-1, 64, 52, 52]          18,496
+         MaxPool2d-6           [-1, 64, 26, 26]               0
+            Linear-7                   [-1, 64]       2,768,960
+            Linear-8                    [-1, 3]             195
+================================================================
+Total params: 2,792,739
+Trainable params: 2,792,739
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 12.78
+Params size (MB): 10.65
+Estimated Total Size (MB): 24.01
+----------------------------------------------------------------
+[32mNet(
+[32m  (conv1): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))
+[32m  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[32m  (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1))
+[32m  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[32m  (conv3): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+[32m  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+[32m  (fc1): Linear(in_features=43264, out_features=64, bias=True)
+[32m  (fc2): Linear(in_features=64, out_features=3, bias=True)
+[32m)
+初始化的学习率： 0.001
+[34m开始训练......
+第1个epoch的学习率：0.001000
+epoch:1/20 	 train_acc:61.00852584838867 	 val_acc:79.14893341064453 	 train_loss:0.6117134094238281 	 val_loss:0.4804154932498932
+第2个epoch的学习率：0.000994
+epoch:2/20 	 train_acc:83.16761779785156 	 val_acc:88.79431915283203 	 train_loss:0.27967604994773865 	 val_loss:0.13953083753585815
+第3个epoch的学习率：0.000976
+epoch:3/20 	 train_acc:87.74858093261719 	 val_acc:88.36878967285156 	 train_loss:0.3933103084564209 	 val_loss:0.021815607324242592
+第4个epoch的学习率：0.000946
+epoch:4/20 	 train_acc:88.56534576416016 	 val_acc:89.9290771484375 	 train_loss:0.3124941885471344 	 val_loss:0.04148859530687332
+第5个epoch的学习率：0.000905
+epoch:5/20 	 train_acc:91.12216186523438 	 val_acc:92.48226928710938 	 train_loss:0.10076016187667847 	 val_loss:0.034471720457077026
+第6个epoch的学习率：0.000854
+epoch:6/20 	 train_acc:91.69034576416016 	 val_acc:93.61701965332031 	 train_loss:0.14171479642391205 	 val_loss:0.02983592264354229
+第7个epoch的学习率：0.000794
+epoch:7/20 	 train_acc:92.96875 	 val_acc:93.90070343017578 	 train_loss:0.16429400444030762 	 val_loss:0.019220450893044472
+第8个epoch的学习率：0.000727
+epoch:8/20 	 train_acc:94.56676483154297 	 val_acc:96.17021179199219 	 train_loss:0.14220279455184937 	 val_loss:0.043385766446590424
+第9个epoch的学习率：0.000655
+epoch:9/20 	 train_acc:94.74431610107422 	 val_acc:94.46807861328125 	 train_loss:0.14346054196357727 	 val_loss:0.018652446568012238
+第10个epoch的学习率：0.000578
+epoch:10/20 	 train_acc:95.41903686523438 	 val_acc:95.88652038574219 	 train_loss:0.12218861281871796 	 val_loss:0.0184536874294281
+第11个epoch的学习率：0.000500
+epoch:11/20 	 train_acc:95.6321029663086 	 val_acc:96.02836608886719 	 train_loss:0.05009746551513672 	 val_loss:0.05284147337079048
+第12个epoch的学习率：0.000422
+epoch:12/20 	 train_acc:94.9928970336914 	 val_acc:95.17730712890625 	 train_loss:0.11164592206478119 	 val_loss:0.052826888859272
+第13个epoch的学习率：0.000345
+epoch:13/20 	 train_acc:95.7741470336914 	 val_acc:97.30496215820312 	 train_loss:0.08506277203559875 	 val_loss:0.03056040033698082
+第14个epoch的学习率：0.000273
+epoch:14/20 	 train_acc:96.91051483154297 	 val_acc:96.87942504882812 	 train_loss:0.08887500315904617 	 val_loss:0.028339805081486702
+第15个epoch的学习率：0.000206
+epoch:15/20 	 train_acc:96.76847076416016 	 val_acc:96.87942504882812 	 train_loss:0.13699375092983246 	 val_loss:0.02420124039053917
+第16个epoch的学习率：0.000146
+epoch:16/20 	 train_acc:96.76847076416016 	 val_acc:97.7304916381836 	 train_loss:0.057951606810092926 	 val_loss:0.03877494856715202
+第17个epoch的学习率：0.000095
+epoch:17/20 	 train_acc:97.3366470336914 	 val_acc:97.02127838134766 	 train_loss:0.13049213588237762 	 val_loss:0.027265984565019608
+第18个epoch的学习率：0.000054
+epoch:18/20 	 train_acc:97.08806610107422 	 val_acc:97.30496215820312 	 train_loss:0.0877360850572586 	 val_loss:0.023109417408704758
+第19个epoch的学习率：0.000024
+epoch:19/20 	 train_acc:97.54972076416016 	 val_acc:97.02127838134766 	 train_loss:0.04027394577860832 	 val_loss:0.0276347566395998
+第20个epoch的学习率：0.000006
+epoch:20/20 	 train_acc:97.65625 	 val_acc:97.02127838134766 	 train_loss:0.09123535454273224 	 val_loss:0.026715364307165146
+训练完成

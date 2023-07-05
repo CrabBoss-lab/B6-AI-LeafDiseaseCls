@@ -1,0 +1,31 @@
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_setup.py:_flush():68] Configure stats pid to 28428
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_setup.py:_flush():68] Loading settings from C:\Users\yujunyu\.config\wandb\settings
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_setup.py:_flush():68] Loading settings from D:\PycharmProject(D)\B6植物病害\植物病害开发代码\wandb\settings
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'D:\\PycharmProject(D)\\B6植物病害\\植物病害开发代码\\train.py'}
+2023-05-16 16:40:59,181 INFO    MainThread:28428 [wandb_init.py:_log_setup():476] Logging user logs to D:\PycharmProject(D)\B6植物病害\植物病害开发代码\wandb\run-20230516_164059-2173ljov\logs\debug.log
+2023-05-16 16:40:59,182 INFO    MainThread:28428 [wandb_init.py:_log_setup():477] Logging internal logs to D:\PycharmProject(D)\B6植物病害\植物病害开发代码\wandb\run-20230516_164059-2173ljov\logs\debug-internal.log
+2023-05-16 16:40:59,182 INFO    MainThread:28428 [wandb_init.py:init():516] calling init triggers
+2023-05-16 16:40:59,182 INFO    MainThread:28428 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2023-05-16 16:40:59,182 INFO    MainThread:28428 [wandb_init.py:init():569] starting backend
+2023-05-16 16:40:59,182 INFO    MainThread:28428 [wandb_init.py:init():573] setting up manager
+2023-05-16 16:40:59,186 INFO    MainThread:28428 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2023-05-16 16:40:59,192 INFO    MainThread:28428 [wandb_init.py:init():580] backend started and connected
+2023-05-16 16:40:59,196 INFO    MainThread:28428 [wandb_init.py:init():658] updated telemetry
+2023-05-16 16:40:59,198 INFO    MainThread:28428 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2023-05-16 16:41:04,081 WARNING MainThread:28428 [wandb_init.py:init():1097] interrupted
+Traceback (most recent call last):
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\site-packages\wandb\sdk\wandb_init.py", line 1076, in init
+    run = wi.init()
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\site-packages\wandb\sdk\wandb_init.py", line 696, in init
+    result = handle.wait(
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\site-packages\wandb\sdk\lib\mailbox.py", line 76, in wait
+    found = self._slot._get_and_clear(timeout=1)
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\site-packages\wandb\sdk\lib\mailbox.py", line 35, in _get_and_clear
+    if self._event.wait(timeout=timeout):
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\threading.py", line 600, in wait
+    signaled = self._cond.wait(timeout)
+  File "C:\Users\yujunyu\.conda\envs\pytorch\lib\threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

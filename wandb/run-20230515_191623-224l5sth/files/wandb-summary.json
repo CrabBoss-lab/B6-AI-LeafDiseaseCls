@@ -1,0 +1,1 @@
+{"Epoch": 20, "Learning Rate": 6.15582970243117e-06, "_timestamp": 1684149608.5884433, "_runtime": 225.1312391757965, "_step": 39, "Train Accuracy": 98.18892669677734, "Val Accuracy": 97.5886459350586, "Train Loss": 0.050872594118118286, "Val Loss": 0.03355342522263527, "_wandb": {"runtime": 223}}
