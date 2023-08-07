@@ -1,6 +1,6 @@
 # B6智慧农业——深度学习模型
 
-  - [🔈Procedure](#procedure)
+  - [🔈proceduce](#proceduce)
     - [赛题简介：](#赛题简介)
     - [实现目标：](#实现目标)
     - [开发大纲：](#开发大纲)
@@ -11,7 +11,7 @@
     - [3、Predict](#3predict)
 
 ---
-## 🔈Procedure
+## 🔈proceduce
 ### 赛题简介：
 该项目为[【【软件杯-B6智慧农业-植物表型特征识别】赛题-🔍】](https://www.cnsoftbei.com/plus/view.php?aid=826) 中的深度学习模型部分，
 旨在实现三类植物叶片病害的分类，属于ImageClassification任务，本身任务难度为入门，部分难度中等。
